@@ -1,9 +1,26 @@
 import React from 'react'
 
+
+
 class IndicesUI extends React.Component {
+  componentWillMount() {
+    console.log('componentWillMount()');
+  }
+
+  componentDidMount() {
+    console.log('componentDidMount()');
+  }
+
+  componentWillUnmount() {
+    console.log('componentWillUnmount()');
+  }
+
   render() {
-    return <h2>2</h2>
+    console.log('render()');
+    return <h2>IndicesUI</h2>
   }
 }
 
-module.exports = IndicesUI
+console.log('IndicesUI is loaded');
+
+module.exports = IndicesUI;
